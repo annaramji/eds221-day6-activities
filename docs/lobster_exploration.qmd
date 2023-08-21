@@ -8,6 +8,90 @@ editor: visual
 
 ## Lobster Data Exploration
 
+## **Task 1: Read Broman & Woo\'s *Data organization in spreadsheets***
+
+Take \~15 minutes to read Broman & Woo\'s evergreen paper [**Data organization in spreadsheets**](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989). As you read, think about data that you have created or had to work with that did *not* follow these guidelines. Make notes of examples to share from several - how did you input data previously? How would you change the way you input data?
+
+-   always follow YYYY-MM-DD in data entries for dates
+
+    -   using the global \"ISO 8601\" standard
+
+    -   https://xkcd.com/1179/
+
+    -   use plain text format for date cells in Excel
+
+        -   can use an apostrophe to force it to treat it as a date
+
+-   be consistent :)
+
+    -   Use consistent codes for categorical variables.
+
+    -   Use a consistent fixed code for any missing values. (i.e., NA)
+
+    -   Use consistent variable names.
+
+    -   Use consistent subject identifiers. 
+
+    -   Use a consistent data layout in multiple files.
+
+    -   Use consistent file names.
+
+    -   Use a consistent format for all dates, (YYYY-MM-DD)
+
+    -   Use consistent phrases in your notes. (consistent capitalization etc. )
+
+    -   Be careful about extra spaces within cells.
+
+-   follow rules from class about tidy data -- each variable is a column, each observation is a row, each cell contains a single variable
+
+-   Choose good names for things
+
+    -   Avoid special characters, except for underscores and hyphens. Other symbols (\$, \@, %, #, &, \*, (, ), !, /, etc.) 
+
+-   No empty cells (fill as NA)
+
+-   Make it a rectangle
+
+    -   The best layout for your data within a spreadsheet is as a single big rectangle with rows corresponding to subjects and columns corresponding to variables. The first row should contain variable names,
+
+-   Create a data dictionary
+
+    -   separate file that explains what all variable names are, units, max and min, etc.
+
+-    No Calculations in the Raw Data Files
+
+-   Do Not Use Font Color or Highlighting as Data
+
+-   Make Backups
+
+-   Use data validation to avoid errors
+
+    -   Select a column
+
+    -   In the menu bar, choose Data → Validation
+
+    -   Choose appropriate validation criteria. For example,
+
+        -   A whole number in some range
+
+        -   A decimal number in some range
+
+        -   A list of possible values
+
+        -   Text, but with a limit on length
+
+-   Save the Data in Plain Text Files
+
+    -   plain text format (csv)
+
+    -   
+
+Questions:
+
+-   What are major / most common ways you have seen these guidelines ignored?
+
+-   What is your experience working with or creating data in spreadsheets that don\'t follow these guidelines?
+
 ```{r}
 library(tidyverse)
 library(here)
